@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Akshaya Patra Foundation</title>
+    <link rel="stylesheet" href="contect.css"> <!-- Assuming your CSS file is named styles.css -->
+    <style>
+        /* Page-Specific Styles */
+        .contact-header {
+            background: #0d6efd;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .contact-header p {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .contact-info,
+        .contact-form {
+            flex: 1 1 45%;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h2,
+        .contact-form h2 {
+            color: #0d6efd;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: #0d6efd;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .contact-info a:hover {
+            color: #007bff;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form form input,
+        .contact-form form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f7f7f7;
+            transition: background 0.3s ease, border-color 0.3s ease;
+        }
+
+        .contact-form form input:focus,
+        .contact-form form textarea:focus {
+            background: #fff;
+            border-color: #0d6efd;
+            outline: none;
+        }
+
+        .contact-form form button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(45deg, #0d6efd, #007bff);
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .contact-form form button:hover {
+            background: linear-gradient(45deg, #007bff, #0a58ca);
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .contact-form form button:active {
+            background: linear-gradient(45deg, #0a58ca, #004085);
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .contact-info,
+            .contact-form {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <img src="AP.png" alt="Akshaya Patra Foundation Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="directed.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contect.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="contact-header">
+    <h1>Contact Us</h1>
+    <p>We would love to hear from you! Reach out to us using the details below.</p>
+</section>
+
+<div class="contact-container">
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> Opp. Ahmedabad Dental College, Bhadaj, Santej Road, Nr. Science City, Ahmedabad,<br> Gujarat 380060, INDIA</p>
+        <p><strong>Phone:</strong> +91 099042 22266</p>
+        <p><strong>Email:</strong> <a href="mailto:info@akshayapatra.org">info@akshayapatra.org</a></p>
+        <p>For more information, visit: <a href="gujarat.akshayapatra.org" target="_blank">www.akshayapatra.org</a></p>
+    </div>
+
+    <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>The Akshaya Patra Foundation is a non-profit organization that strives to eliminate classroom hunger by implementing the Mid-Day Meal Scheme in government and government-aided schools. We also aim to counter malnutrition and support the right to education of socio-economically disadvantaged children.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="directed.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contect.html">Contact Us</a></li>
+                <li><a href="https://www.akshayapatra.org/donate-to-midday-meal-programme?utm_source=BingAds&utm_campaign=TAPF-Brand&utm_content=+&msclkid=07faaea57e0c10c5be14c8dbc50cbe62">Donate</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p>Akshaya Patra Foundation</p>
+            <p>Phone: +91 099042 22266</p>
+            <p>Email: <a href="mailto:info@akshayapatra.org" style="color: yellow;">info@akshayapatra.org</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Akshaya Patra Foundation. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

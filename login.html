@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="#"><img src="AP.png" alt="LOGO"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><h2><a href="login.html">Home</a></h2></li>
+                    <li><h2><a href="about.html">About</a></h2></li>
+                    <li><h2><a href="contect.html">Contact</a></h2></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="container">
+            <form id="loginForm">
+                <h2>Login</h2>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About</h3>
+                <p>Akshaya Patra Foundation is a non-profit organization that strives to eliminate classroom hunger by implementing the Mid-Day Meal Scheme in government and government-aided schools. We also aim to counter malnutrition and support the right to education of socio-economically disadvantaged children.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="login.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contect.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Opp. Ahmedabad Dental College,<br> 
+                    Bhadaj, Santej Road,<br> 
+                    Nr. Science City,<br>
+                    Ahmedabad, Gujarat 380060
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            window.location.href = 'directed.html'; // Redirect to directed.html
+        });
+    </script>
+</body>
+</html>

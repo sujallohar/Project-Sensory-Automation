@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+           
+                <a href="#" class="logo"><img src="AP.png" alt="LOGO"></a>
+            
+            <nav>
+                <ul>
+                    <li><h2><a href="directed.html">Home</a></h2></li>
+                    <li><h2><a href="login.html">Login</a></h2>
+                    <li><h2><a href="about.html">About</a></h2></li>
+                    <li><h2><a href="contect.html">Contact</a></h2></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <div class="wrapper">
+        <div class="container">
+            <form id="feedbackForm" action="/" method="POST">
+                <div id="dishes">
+                    <!-- Initial Dishes Here -->
+                    <div class="dish">
+                        <h3 class="dish-name" contenteditable="true">LOUKI CHANA DAL</h3>
+                        <input type="hidden" name="itemName[]" value="LOUKI CHANA DAL">
+                        <input type="number" name="batch[]" placeholder="Enter batch" title="Enter the batch number" required>
+                        <div class="rating-section">
+                            <label>Appearance</label>
+                            <div class="rating appearance">
+                                <input type="radio" id="appearance01" name="appearance0" value="1"><label for="appearance01" title="1 star">★</label>
+                                <input type="radio" id="appearance02" name="appearance0" value="2"><label for="appearance02" title="2 stars">★</label>
+                                <input type="radio" id="appearance03" name="appearance0" value="3"><label for="appearance03" title="3 stars">★</label>
+                                <input type="radio" id="appearance04" name="appearance0" value="4"><label for="appearance04" title="4 stars">★</label>
+                                <input type="radio" id="appearance05" name="appearance0" value="5"><label for="appearance05" title="5 stars">★</label>
+                                <input type="radio" id="appearance06" name="appearance0" value="6"><label for="appearance06" title="6 stars">★</label>
+                                <input type="radio" id="appearance07" name="appearance0" value="7"><label for="appearance07" title="7 stars">★</label>
+                                <input type="radio" id="appearance08" name="appearance0" value="8"><label for="appearance08" title="8 stars">★</label>
+                                <input type="radio" id="appearance09" name="appearance0" value="9"><label for="appearance09" title="9 stars">★</label>
+                                <input type="radio" id="appearance010" name="appearance0" value="10"><label for="appearance010" title="10 stars">★</label>
+                            </div>
+                        </div>
+                        <div class="rating-section">
+                            <label>Flavor</label>
+                            <div class="rating flavor">
+                                <input type="radio" id="flavor1" name="flavor0" value="1"><label for="flavor1" title="1 star">★</label>
+                                <input type="radio" id="flavor2" name="flavor0" value="2"><label for="flavor2" title="2 stars">★</label>
+                                <input type="radio" id="flavor3" name="flavor0" value="3"><label for="flavor3" title="3 stars">★</label>
+                                <input type="radio" id="flavor4" name="flavor0" value="4"><label for="flavor4" title="4 stars">★</label>
+                                <input type="radio" id="flavor5" name="flavor0" value="5"><label for="flavor5" title="5 stars">★</label>
+                                <input type="radio" id="flavor6" name="flavor0" value="6"><label for="flavor6" title="6 stars">★</label>
+                                <input type="radio" id="flavor7" name="flavor0" value="7"><label for="flavor7" title="7 stars">★</label>
+                                <input type="radio" id="flavor8" name="flavor0" value="8"><label for="flavor8" title="8 stars">★</label>
+                                <input type="radio" id="flavor9" name="flavor0" value="9"><label for="flavor9" title="9 stars">★</label>
+                                <input type="radio" id="flavor10" name="flavor0" value="10"><label for="flavor10" title="10 stars">★</label>
+                            </div>
+                        </div>
+                        <div class="rating-section">
+                            <label>Taste</label>
+                            <div class="rating taste">
+                                <input type="radio" id="taste1" name="taste0" value="1"><label for="taste1" title="1 star">★</label>
+                                <input type="radio" id="taste2" name="taste0" value="2"><label for="taste2" title="2 stars">★</label>
+                                <input type="radio" id="taste3" name="taste0" value="3"><label for="taste3" title="3 stars">★</label>
+                                <input type="radio" id="taste4" name="taste0" value="4"><label for="taste4" title="4 stars">★</label>
+                                <input type="radio" id="taste5" name="taste0" value="5"><label for="taste5" title="5 stars">★</label>
+                                <input type="radio" id="taste6" name="taste0" value="6"><label for="taste6" title="6 stars">★</label>
+                                <input type="radio" id="taste7" name="taste0" value="7"><label for="taste7" title="7 stars">★</label>
+                                <input type="radio" id="taste8" name="taste0" value="8"><label for="taste8" title="8 stars">★</label>
+                                <input type="radio" id="taste9" name="taste0" value="9"><label for="taste9" title="9 stars">★</label>
+                                <input type="radio" id="taste10" name="taste0" value="10"><label for="taste10" title="10 stars">★</label>
+                            </div>
+                        </div>
+                        <button type="button" class="remove-dish">Remove</button>
+                    </div>
+
+                    <div class="dish">
+                        <h3 class="dish-name" contenteditable="true">VEG PULAV</h3>
+                        <input type="hidden" name="itemName[]" value="VEG PULAV">
+                        <input type="number" name="batch[]" placeholder="Enter batch" title="Enter the batch number" required>
+                        <div class="rating-section">
+                            <label>Appearance</label>
+                            <div class="rating appearance">
+                                <input type="radio" id="appearance11" name="appearance1" value="1"><label for="appearance11" title="1 star">★</label>
+                                <input type="radio" id="appearance12" name="appearance1" value="2"><label for="appearance12" title="2 stars">★</label>
+                                <input type="radio" id="appearance13" name="appearance1" value="3"><label for="appearance13" title="3 stars">★</label>
+                                <input type="radio" id="appearance14" name="appearance1" value="4"><label for="appearance14" title="4 stars">★</label>
+                                <input type="radio" id="appearance15" name="appearance1" value="5"><label for="appearance15" title="5 stars">★</label>
+                                <input type="radio" id="appearance16" name="appearance1" value="6"><label for="appearance16" title="6 stars">★</label>
+                                <input type="radio" id="appearance17" name="appearance1" value="7"><label for="appearance17" title="7 stars">★</label>
+                                <input type="radio" id="appearance18" name="appearance1" value="8"><label for="appearance18" title="8 stars">★</label>
+                                <input type="radio" id="appearance19" name="appearance1" value="9"><label for="appearance19" title="9 stars">★</label>
+                                <input type="radio" id="appearance110" name="appearance1" value="10"><label for="appearance110" title="10 stars">★</label>
+                            </div>
+                        </div>
+                        <div class="rating-section">
+                            <label>Flavor</label>
+                            <div class="rating flavor">
+                                <input type="radio" id="flavor21" name="flavor1" value="1"><label for="flavor21" title="1 star">★</label>
+                                <input type="radio" id="flavor22" name="flavor1" value="2"><label for="flavor22" title="2 stars">★</label>
+                                <input type="radio" id="flavor23" name="flavor1" value="3"><label for="flavor23" title="3 stars">★</label>
+                                <input type="radio" id="flavor24" name="flavor1" value="4"><label for="flavor24" title="4 stars">★</label>
+                                <input type="radio" id="flavor25" name="flavor1" value="5"><label for="flavor25" title="5 stars">★</label>
+                                <input type="radio" id="flavor26" name="flavor1" value="6"><label for="flavor26" title="6 stars">★</label>
+                                <input type="radio" id="flavor27" name="flavor1" value="7"><label for="flavor27" title="7 stars">★</label>
+                                <input type="radio" id="flavor28" name="flavor1" value="8"><label for="flavor28" title="8 stars">★</label>
+                                <input type="radio" id="flavor29" name="flavor1" value="9"><label for="flavor29" title="9 stars">★</label>
+                                <input type="radio" id="flavor120" name="flavor1" value="10"><label for="flavor120" title="10 stars">★</label>
+                            </div>
+                        </div>
+                        <div class="rating-section">
+                            <label>Taste</label>
+                            <div class="rating taste">
+                                <input type="radio" id="taste11" name="taste1" value="1"><label for="taste11" title="1 star">★</label>
+                                <input type="radio" id="taste12" name="taste1" value="2"><label for="taste12" title="2 stars">★</label>
+                                <input type="radio" id="taste13" name="taste1" value="3"><label for="taste13" title="3 stars">★</label>
+                                <input type="radio" id="taste14" name="taste1" value="4"><label for="taste14" title="4 stars">★</label>
+                                <input type="radio" id="taste15" name="taste1" value="5"><label for="taste15" title="5 stars">★</label>
+                                <input type="radio" id="taste16" name="taste1" value="6"><label for="taste16" title="6 stars">★</label>
+                                <input type="radio" id="taste17" name="taste1" value="7"><label for="taste17" title="7 stars">★</label>
+                                <input type="radio" id="taste18" name="taste1" value="8"><label for="taste18" title="8 stars">★</label>
+                                <input type="radio" id="taste19" name="taste1" value="9"><label for="taste19" title="9 stars">★</label>
+                                <input type="radio" id="taste110" name="taste1" value="10"><label for="taste110" title="10 stars">★</label>
+                            </div>
+                        </div>
+                        
+                        <button type="button" class="remove-dish">Remove</button>
+                    </div>
+
+                    <div class="dish">
+                        <h3 class="dish-name" contenteditable="true">ROTI</h3>
+                        <input type="hidden" name="itemName[]" value="ROTI">
+                        <input type="number" name="batch[]" placeholder="Enter batch" title="Enter the batch number" required>
+                        <div class="rating-section">
+                            <label>Appearance</label>
+                            <div class="rating appearance">
+                                <input type="radio" id="appearance21" name="appearance2" value="1"><label for="appearance21" title="1 star">★</label>
+                                <input type="radio" id="appearance22" name="appearance2" value="2"><label for="appearance22" title="2 stars">★</label>
+                                <input type="radio" id="appearance23" name="appearance2" value="3"><label for="appearance23" title="3 stars">★</label>
+                                <input type="radio" id="appearance24" name="appearance2" value="4"><label for="appearance24" title="4 stars">★</label>
+                                <input type="radio" id="appearance25" name="appearance2" value="5"><label for="appearance25" title="5 stars">★</label>
+                                <input type="radio" id="appearance26" name="appearance2" value="6"><label for="appearance26" title="6 stars">★</label>
+                                <input type="radio" id="appearance27" name="appearance2" value="7"><label for="appearance27" title="7 stars">★</label>
+                                <input type="radio" id="appearance28" name="appearance2" value="8"><label for="appearance28" title="8 stars">★</label>
+                                <input type="radio" id="appearance29" name="appearance2" value="9"><label for="appearance29" title="9 stars">★</label>
+                                <input type="radio" id="appearance110" name="appearance2" value="10"><label for="appearance120" title="10 stars">★</label>
+                            </div>
+                        </div>
+                        <div class="rating-section">
+                            <label>Flavor</label>
+                            <div class="rating flavor">
+                                <input type="radio" id="flavor11" name="flavor2" value="1"><label for="flavor11" title="1 star">★</label>
+                                <input type="radio" id="flavor12" name="flavor2" value="2"><label for="flavor12" title="2 stars">★</label>
+                                <input type="radio" id="flavor13" name="flavor2" value="3"><label for="flavor13" title="3 stars">★</label>
+                                <input type="radio" id="flavor14" name="flavor2" value="4"><label for="flavor14" title="4 stars">★</label>
+                                <input type="radio" id="flavor15" name="flavor2" value="5"><label for="flavor15" title="5 stars">★</label>
+                                <input type="radio" id="flavor16" name="flavor2" value="6"><label for="flavor16" title="6 stars">★</label>
+                                <input type="radio" id="flavor17" name="flavor2" value="7"><label for="flavor17" title="7 stars">★</label>
+                                <input type="radio" id="flavor18" name="flavor2" value="8"><label for="flavor18" title="8 stars">★</label>
+                                <input type="radio" id="flavor19" name="flavor2" value="9"><label for="flavor19" title="9 stars">★</label>
+                                <input type="radio" id="flavor110" name="flavor2" value="10"><label for="flavor110" title="10 stars">★</label>
+                            </div>
+                        </div>
+                        <div class="rating-section">
+                            <label>Taste</label>
+                            <div class="rating taste">
+                                <input type="radio" id="taste21" name="taste2" value="1"><label for="taste21" title="1 star">★</label>
+                                <input type="radio" id="taste22" name="taste2" value="2"><label for="taste22" title="2 stars">★</label>
+                                <input type="radio" id="taste23" name="taste2" value="3"><label for="taste23" title="3 stars">★</label>
+                                <input type="radio" id="taste24" name="taste2" value="4"><label for="taste24" title="4 stars">★</label>
+                                <input type="radio" id="taste25" name="taste2" value="5"><label for="taste25" title="5 stars">★</label>
+                                <input type="radio" id="taste26" name="taste2" value="6"><label for="taste26" title="6 stars">★</label>
+                                <input type="radio" id="taste27" name="taste2" value="7"><label for="taste27" title="7 stars">★</label>
+                                <input type="radio" id="taste28" name="taste2" value="8"><label for="taste28" title="8 stars">★</label>
+                                <input type="radio" id="taste29" name="taste2" value="9"><label for="taste29" title="9 stars">★</label>
+                                <input type="radio" id="taste120" name="taste2" value="10"><label for="taste120" title="10 stars">★</label>
+                            </div>
+                        </div>
+                        
+                        <button type="button" class="remove-dish">Remove</button>
+                    </div>
+
+                    <div class="dish">
+                        <h3 class="dish-name" contenteditable="true">ROASTED DESI CHANA CHAT</h3>
+                        <input type="hidden" name="itemName[]" value="ROASTED DESI CHANA CHAT">
+                        <input type="number" name="batch[]" placeholder="Enter batch" title="Enter the batch number" required>
+                        <div class="rating-section">
+                            <label>Appearance</label>
+                            <div class="rating appearance">
+                                <input type="radio" id="appearance31" name="appearance3" value="1"><label for="appearance31" title="1 star">★</label>
+                                <input type="radio" id="appearance32" name="appearance3" value="2"><label for="appearance32" title="2 stars">★</label>
+                                <input type="radio" id="appearance33" name="appearance3" value="3"><label for="appearance33" title="3 stars">★</label>
+                                <input type="radio" id="appearance34" name="appearance3" value="4"><label for="appearance34" title="4 stars">★</label>
+                                <input type="radio" id="appearance35" name="appearance3" value="5"><label for="appearance35" title="5 stars">★</label>
+                                <input type="radio" id="appearance36" name="appearance3" value="6"><label for="appearance36" title="6 stars">★</label>
+                                <input type="radio" id="appearance37" name="appearance3" value="7"><label for="appearance37" title="7 stars">★</label>
+                                <input type="radio" id="appearance38" name="appearance3" value="8"><label for="appearance38" title="8 stars">★</label>
+                                <input type="radio" id="appearance39" name="appearance3" value="9"><label for="appearance39" title="9 stars">★</label>
+                                <input type="radio" id="appearance130" name="appearance3" value="10"><label for="appearance130" title="10 stars">★</label>
+                            </div>
+                        </div>
+                        <div class="rating-section">
+                            <label>Flavor</label>
+                            <div class="rating flavor">
+                                <input type="radio" id="flavor31" name="flavor3" value="1"><label for="flavor31" title="1 star">★</label>
+                                <input type="radio" id="flavor32" name="flavor3" value="2"><label for="flavor32" title="2 stars">★</label>
+                                <input type="radio" id="flavor33" name="flavor3" value="3"><label for="flavor33" title="3 stars">★</label>
+                                <input type="radio" id="flavor34" name="flavor3" value="4"><label for="flavor34" title="4 stars">★</label>
+                                <input type="radio" id="flavor35" name="flavor3" value="5"><label for="flavor35" title="5 stars">★</label>
+                                <input type="radio" id="flavor36" name="flavor3" value="6"><label for="flavor36" title="6 stars">★</label>
+                                <input type="radio" id="flavor37" name="flavor3" value="7"><label for="flavor37" title="7 stars">★</label>
+                                <input type="radio" id="flavor38" name="flavor3" value="8"><label for="flavor38" title="8 stars">★</label>
+                                <input type="radio" id="flavor39" name="flavor3" value="9"><label for="flavor39" title="9 stars">★</label>
+                                <input type="radio" id="flavor130" name="flavor3" value="10"><label for="flavor130" title="10 stars">★</label>
+                            </div>
+                        </div>
+                        <div class="rating-section">
+                            <label>Taste</label>
+                            <div class="rating taste">
+                                <input type="radio" id="taste31" name="taste3" value="1"><label for="taste31" title="1 star">★</label>
+                                <input type="radio" id="taste32" name="taste3" value="2"><label for="taste32" title="2 stars">★</label>
+                                <input type="radio" id="taste33" name="taste3" value="3"><label for="taste33" title="3 stars">★</label>
+                                <input type="radio" id="taste34" name="taste3" value="4"><label for="taste34" title="4 stars">★</label>
+                                <input type="radio" id="taste35" name="taste3" value="5"><label for="taste35" title="5 stars">★</label>
+                                <input type="radio" id="taste36" name="taste3" value="6"><label for="taste36" title="6 stars">★</label>
+                                <input type="radio" id="taste37" name="taste3" value="7"><label for="taste37" title="7 stars">★</label>
+                                <input type="radio" id="taste38" name="taste3" value="8"><label for="taste38" title="8 stars">★</label>
+                                <input type="radio" id="taste39" name="taste3" value="9"><label for="taste39" title="9 stars">★</label>
+                                <input type="radio" id="taste130" name="taste3" value="10"><label for="taste130" title="10 stars">★</label>
+                            </div>
+                        </div>
+                        
+                        <button type="button" class="remove-dish">Remove</button>
+                    </div>
+                    <!-- Dish Template for Cloning -->
+                    <div class="dish template" style="display: none;">
+                        <h3 class="dish-name" contenteditable="true">NEW DISH</h3>
+                        <input type="hidden" name="itemName[]" value="NEW DISH">
+                        <input type="number" name="batch[]" placeholder="Enter batch" title="Enter the batch number" required>
+                        <div class="rating-section">
+                            <label>Appearance</label>
+                            <div class="rating appearance">
+                                <input type="radio" id="appearance_template1" name="appearance_template" value="1"><label for="appearance_template1" title="1 star">★</label>
+                                <input type="radio" id="appearance_template2" name="appearance_template" value="2"><label for="appearance_template2" title="2 stars">★</label>
+                                <input type="radio" id="appearance_template3" name="appearance_template" value="3"><label for="appearance_template3" title="3 stars">★</label>
+                                <input type="radio" id="appearance_template4" name="appearance_template" value="4"><label for="appearance_template4" title="4 stars">★</label>
+                                <input type="radio" id="appearance_template5" name="appearance_template" value="5"><label for="appearance_template5" title="5 stars">★</label>
+                                <input type="radio" id="appearance_template6" name="appearance_template" value="6"><label for="appearance_template6" title="6 stars">★</label>
+                                <input type="radio" id="appearance_template7" name="appearance_template" value="7"><label for="appearance_template7" title="7 stars">★</label>
+                                <input type="radio" id="appearance_template8" name="appearance_template" value="8"><label for="appearance_template8" title="8 stars">★</label>
+                                <input type="radio" id="appearance_template9" name="appearance_template" value="9"><label for="appearance_template9" title="9 stars">★</label>
+                                <input type="radio" id="appearance_template10" name="appearance_template" value="10"><label for="appearance_template10" title="10 stars">★</label>
+                            </div>
+                        </div>
+                        <div class="rating-section">
+                            <label>Flavor</label>
+                            <div class="rating flavor">
+                                <input type="radio" id="flavor_template1" name="flavor_template" value="1"><label for="flavor_template1" title="1 star">★</label>
+                                <input type="radio" id="flavor_template2" name="flavor_template" value="2"><label for="flavor_template2" title="2 stars">★</label>
+                                <input type="radio" id="flavor_template3" name="flavor_template" value="3"><label for="flavor_template3" title="3 stars">★</label>
+                                <input type="radio" id="flavor_template4" name="flavor_template" value="4"><label for="flavor_template4" title="4 stars">★</label>
+                                <input type="radio" id="flavor_template5" name="flavor_template" value="5"><label for="flavor_template5" title="5 stars">★</label>
+                                <input type="radio" id="flavor_template6" name="flavor_template" value="6"><label for="flavor_template6" title="6 stars">★</label>
+                                <input type="radio" id="flavor_template7" name="flavor_template" value="7"><label for="flavor_template7" title="7 stars">★</label>
+                                <input type="radio" id="flavor_template8" name="flavor_template" value="8"><label for="flavor_template8" title="8 stars">★</label>
+                                <input type="radio" id="flavor_template9" name="flavor_template" value="9"><label for="flavor_template9" title="9 stars">★</label>
+                                <input type="radio" id="flavor_template10" name="flavor_template" value="10"><label for="flavor_template10" title="10 stars">★</label>
+                            </div>
+                        </div>
+                        <div class="rating-section">
+                            <label>Taste</label>
+                            <div class="rating taste">
+                                <input type="radio" id="taste_template1" name="taste_template" value="1"><label for="taste_template1" title="1 star">★</label>
+                                <input type="radio" id="taste_template2" name="taste_template" value="2"><label for="taste_template2" title="2 stars">★</label>
+                                <input type="radio" id="taste_template3" name="taste_template" value="3"><label for="taste_template3" title="3 stars">★</label>
+                                <input type="radio" id="taste_template4" name="taste_template" value="4"><label for="taste_template4" title="4 stars">★</label>
+                                <input type="radio" id="taste_template5" name="taste_template" value="5"><label for="taste_template5" title="5 stars">★</label>
+                                <input type="radio" id="taste_template6" name="taste_template" value="6"><label for="taste_template6" title="6 stars">★</label>
+                                <input type="radio" id="taste_template7" name="taste_template" value="7"><label for="taste_template7" title="7 stars">★</label>
+                                <input type="radio" id="taste_template8" name="taste_template" value="8"><label for="taste_template8" title="8 stars">★</label>
+                                <input type="radio" id="taste_template9" name="taste_template" value="9"><label for="taste_template9" title="9 stars">★</label>
+                                <input type="radio" id="taste_template10" name="taste_template" value="10"><label for="taste_template10" title="10 stars">★</label>
+                            </div>
+                        </div>
+                        <button type="button" class="remove-dish">Remove</button>
+                    </div>
+                </div>
+                <button type="button" id="addDishButton">Add Dish</button>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About</h3>
+                <p>The Akshaya Patra Foundation is a non-profit organization that strives to eliminate classroom hunger by implementing the Mid-Day Meal Scheme in government and government-aided schools. We also aim to counter malnutrition and support the right to education of socio-economically disadvantaged children.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="directed.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contect.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Opp. Ahmedabad Dental College,<br> 
+                    Bhadaj, Santej Road,<br> 
+                    Nr. Science City,<br>
+                    Ahmedabad, Gujarat 380060
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 <a href="https://www.akshayapatra.org">Akshay patras</a>. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

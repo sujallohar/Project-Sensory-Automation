@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback for <%= itemName %></title>
+    <link rel="stylesheet" type="text/css" href="feedback.css">
+</head>
+<body>
+    <h1>Feedback for <%= itemName %></h1>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Batch</th>
+                    <th>Appearance</th>
+                    <th>Flavor</th>
+                    <th>Taste</th>
+                    <th>Total Score</th>
+                    <th>Average</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% let totalScore = 0; %>
+                <% let totalAverage = 0; %>
+                <% feedbackData.forEach(row => { %>
+                    <tr>
+                        <td><%= row.date %></td>
+                        <td><%= row.batch %></td>
+                        <td><%= row.appearance %></td>
+                        <td><%= row.flavor %></td>
+                        <td><%= row.taste %></td>
+                        <td><%= row.totalscore %></td>
+                        <td><%= row.average %></td>
+                    </tr>
+                    <% // Calculate totals %>
+                    <% totalScore += row.totalscore; %>
+                    <% totalAverage += row.average; %>
+                <% }); %>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><strong><%= totalScore %></strong></td>
+                    <td><strong><%= totalAverage / feedbackData.length %></strong></td> <!-- Calculate average of averages -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
